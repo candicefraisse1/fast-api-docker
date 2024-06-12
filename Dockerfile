@@ -1,7 +1,7 @@
-FROM python:3
+FROM centos:7
 
-WORKDIR /usr/src/app
-
+RUN mkdir /cloning_folder
+RUN git clone https://github.com/candicefraisse1/fast-api-docker.git
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
