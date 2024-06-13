@@ -24,5 +24,5 @@ docker build -t myimage:v1 .
 ```
 Step 6: Run a Test Container
 ```
-docker run -it myimage:v1 /bin/bash
+docker run -it myimage:v1 /bin/sh
 ```
