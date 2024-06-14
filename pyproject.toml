@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fast-api-dind-CAND"
+version = "0.0.1"
+authors = [
+  { name="Candice Fraisse", email="c.fraisse@octo.com" },
+]
+description = "An open source project to run fast API in a docker-in-docker image. The fast API returns python output."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi
+uvicorn
+fastapi-cli
+pydantic
